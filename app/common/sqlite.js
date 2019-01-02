@@ -183,7 +183,7 @@ const sqlite = {
     totalTodo: function(){
         let response = 0
         new Sqlite(database, function (err, db) {
-            db.all("SELECT * FROM "+table+" WHERE `status` = 'todo'", [], function (err, rows) {
+            db.all("SELECT * FROM "+table+" WHERE `status` IN ('todo','alert')", [], function (err, rows) {
                 if (err) {
                     response = false
                     console.log(err)
