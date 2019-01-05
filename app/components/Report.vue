@@ -1,24 +1,26 @@
 <template>
+<ScrollView>
     <StackLayout>
-        <StackLayout horizontalAlignment="center">
-            <Label :text="todocount" class="todo-count" />
-        </StackLayout>
-        <StackLayout horizontalAlignment="center">
-            <Label text="Todo" class="todo-desc" />
-        </StackLayout>
-        <StackLayout horizontalAlignment="center">
-            <Label :text="misscount" class="miss-count" />
-        </StackLayout>
-        <StackLayout horizontalAlignment="center">
-            <Label text="Missed" class="miss-desc" />
-        </StackLayout>
-        <StackLayout horizontalAlignment="center">
-            <Label :text="donecount" class="done-count" />
-        </StackLayout>
-        <StackLayout horizontalAlignment="center">
-            <Label text="Done" class="done-desc" />
-        </StackLayout>    
+            <StackLayout horizontalAlignment="center">
+                <Label :text="todocount" class="todo-count" />
+            </StackLayout>
+            <StackLayout horizontalAlignment="center">
+                <Label text="Todo" class="todo-desc" />
+            </StackLayout>
+            <StackLayout horizontalAlignment="center">
+                <Label :text="misscount" class="miss-count" />
+            </StackLayout>
+            <StackLayout horizontalAlignment="center">
+                <Label text="Missed" class="miss-desc" />
+            </StackLayout>
+            <StackLayout horizontalAlignment="center">
+                <Label :text="donecount" class="done-count" />
+            </StackLayout>
+            <StackLayout horizontalAlignment="center">
+                <Label text="Done" class="done-desc" />
+            </StackLayout>    
     </StackLayout>
+</ScrollView>
 </template>
 <script>
 import Sqlite from "./../common/sqlite.js"
